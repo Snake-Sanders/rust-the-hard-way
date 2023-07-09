@@ -193,6 +193,15 @@ Introduce a number:
 I have 10, you lose!
 ```
 
+How it works:
+
+1. We assign the trimmed input to the trimmed variable.
+2. We declare the number variable without initializing it yet. 
+3. We use the `if` let construct to attempt parsing the trimmed string as an `i32`. If parsing is successful, the parsed value is assigned to `parsed`, we increment the value in one, and then assign it to the `my_number` variable . Otherwise, we display an error message and exit the program.
+4. Finally, we print the parsed number.
+
+Note that the if let construct is a shorthand way to handle the Result type. It allows you to handle the success case (Ok) and optionally the error case (Err) within a single if statement.
+
 
 ### Celsius to Fahrenheit
 
