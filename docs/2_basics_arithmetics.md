@@ -163,7 +163,7 @@ which comes as `String`, we need to converte it to integer in order to do arithm
 use std::io;
 
 fn main() {
-    println!("Introduce a temperature in Celsius:");
+    println!("Introduce a number:");
     let mut user_input = String::new();
 
     io::stdin()
@@ -171,17 +171,17 @@ fn main() {
         .expect("Failed to read the number");
 
     let trimmed_number = user_input.trim();
-    let fahrenheit: i32;
+    let my_number: i32;
 
     // Convert the input to an integer
     if let Ok(parsed) = trimmed_number.parse::<i32>() {
-        user_number = (parsed * 9 / 5) + 32;
+        my_number = parsed + 1;
     } else {
         println!("Invalid input. Please enter a valid number.");
         return;
     }
 
-    println!("I have {}, you lose!", user_number + 1 );
+    println!("I have {}, you lose!", my_number);
 }
 ```
 
@@ -189,9 +189,8 @@ Output:
 
 ```
 Introduce a number:
-14
-I have 15, you lose!
-
+9
+I have 10, you lose!
 ```
 
 
