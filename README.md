@@ -1,2 +1,3 @@
-# rust-the-hard-way
-Set of Rust example for learning the syntax 
+# Learning Rust the hard way
+
+Set of Rust examples for learning the syntax 
